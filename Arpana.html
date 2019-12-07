@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title> Arpana Trust </title>
+	<style> 
+		ul {
+			list-style-type:none;
+			background-color:  #ff8080;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;   
+		}
+		li a:hover {   
+			background-color: #ff4d4d;
+		
+		}
+		li a{      
+			color:white;
+			padding: 14px 16px;
+			text-align: center;
+			display: block;
+			text-decoration: none;
+			float: left;
+		}
+	</style>
+	
+	<script type="text/javascript">
+	var number = 0;
+	function update() {
+		img_list = ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9MkS-jprAlbUfu8lyhLawgOxnKahQcYD-3M50wbltmn_-v9Kk&s","https://www.arpanaservices.org/sites/all/themes/touch/images/slider/slide22.jpg","https://www.arpanaservices.org/sites/all/themes/touch/images/slider/slide21.jpg","https://www.avivaindia.com/sites/default/files/Arpana%201.jpg","http://www.arpanaservices.org/files/pages/Tuition%20class%20under%20canopy.jpg"];
+		number = number + 1;
+		if (number == 5){
+			number = 0;
+			}
+		document.getElementById('img').src=img_list[number];
+		}
+</script> 
+</head>
+
+<body>
+<ul>
+<li> <a href= "ourmission"> Our Mission </a> </li>
+		<li> <a href= "#enrollment"> Enrollment </a> </li>
+		<li> <a href="#Academics"> Academics </a> </li>
+		<li> <a id="donate" href="#donate" onclick="donate()"> Donate </a> </li>
+		<li> <a href="ourstudents"> Our Students </a> </li> 
+</ul>
+<br>
+<br>
+<h1 align="center" style="font-family:garamond;font-size:50px;"> Arpana Trust </h1>
+
+ <p align="center"> <img id='img' border="2" height=20% onclick="update()" src="https://www.arpanaservices.org/sites/all/themes/touch/images/slider/slide21.jpg"> </p>
+ 
+<p align="center"> One of the greatest benefits that can be given to disadvantaged populations is educational support and care for small children, normally unsupervised whilst parents work. Arpana started its educational programs for disadvantaged children in slum resettlement colonies in Delhi which are based on children’s needs and aspirations, and have as their goal the fulfillment of their dreams. It is the children’s yearning for knowledge, for self expression and self fulfillment that drive Arpana’s endeavors to develop their full potential.</p>
+ 
+ <script type="text/javascript">
+	function donate(){
+	document.getElementById("donate"). href="donate.html";
+	}
+
+</script>	
+ 
+</body>
+</html>
